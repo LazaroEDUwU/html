@@ -1,38 +1,53 @@
+html,
 
-* {
-box-sizing: border-box;
-margin: 0;
-padding: 0;
-.titulo {
-font-family: 'Arial Black', sans-serif; /* puedes cambiarla por otra */
-font-size: 4rem; /* ajusta según tu diseño */
-color: #ff0000;
-text-align: center; /* centrado si quieres */
-margin-top: 20px;
-text-shadow: 0 0 5px #fff,
-             0 0 10px #ff0000,
-             0 0 20px #ff0000,
-             0 0 40px #ff0000;
-transition: text-shadow 0.5s ease-in-out;
+
+.box {
+	display: flex;
 }
-/* Animación al pasar el mouse */
-.titulo:hover {
-  animation: neonEffect 1.5s ease-in-out infinite alternate;
+
+.box .inner {
+	width: 400px;
+	height: 200px;
+	line-height: 200px;
+	font-size: 4em;
+	font-family: sans-serif;
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
 }
-@keyframes neonEffect {
-  from {
-    text-shadow: 0 0 5px #fff,
-                 0 0 10px #ff0000,
-                 0 0 20px #ff0000,
-                 0 0 40px #ff0000;
-  }
-  to {
-    text-shadow: 0 0 10px #fff,
-                 0 0 20px #ff0000,
-                 0 0 40px #ff0000,
-                 0 0 60px #ff0000;
-  }
+
+.box .inner:first-child {
+	background-color: indianred;
+	color: darkred;
+	transform-origin: right;
+	transform: perspective(100px) rotateY(-15deg);
 }
+
+.box .inner:last-child {
+	background-color: lightcoral;
+	color: antiquewhite;
+	transform-origin: left;
+	transform: perspective(100px) rotateY(15deg);
+}
+
+.box .inner span {
+	position: absolute;
+	animation: marquee 5s linear infinite;
+}
+
+.box .inner:first-child span {
+	animation-delay: 2.5s;
+	left: -100%;
+}
+
+@keyframes marquee {
+	from {
+		left: 100%;
+	}
+
+	to {
+		left: -100%;
+	}
 }
 body {
 font-family: Arial, sans-serif;
@@ -92,7 +107,7 @@ padding-bottom: 5px;
 article {
 margin-bottom: 20px; /* Agrega un espacio de 20px debajo de cada <article> */}
 footer {
-text-align: center;
+text-align:center;
 padding: 15px;
 background-color: #2c3e50;
 color: #fff;
