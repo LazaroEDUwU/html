@@ -1,96 +1,128 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Página 3 - Sobre Mí, Proyectos, Hobbies, Contacto & Blog | Portafolio Eduardo</title>
     <link rel="stylesheet" href="pagina3.css">
-    <link rel="stylesheet" href="style.css">
-         <style>
-    * *, *::before, *::after { 
-        animation-play-state: running !important;
-    }
-    </style>
 </head>
 <body>
-     
-
-
-    <script>window.setTimeout = null;</script>
-
-    <header>
-     <div class="stage">
-    <div class="layer"></div>
-    <div class="layer"></div>
-    <div class="layer"></div>
-    <div class="layer"></div>
-    <div class="layer"></div>
-    <div class="layer"></div>
-    <div class="layer"></div>
-    <div class="layer"></div>
-    <div class="layer"></div>
-    <div class="layer"></div>
-    <div class="layer"></div>
-    <div class="layer"></div>
-    <div class="layer"></div>
-    <div class="layer"></div>
-    <div class="layer"></div>
-    <div class="layer"></div>
-    <div class="layer"></div>
-    <div class="layer"></div>
-    <div class="layer"></div>
-    <div class="layer"></div>
-    </div>
+    <header class="header-elegante">
+        <h1 class="titulo-elegante">Eduardo Portfolio</h1>
         <nav>
             <ul>
-                <li><a href="index.html">index</a></li>
-                <li><a href="maquetacion.html">maquetacion</a></li>
-                <li><a href="pagina1.html">pagina1</a></li>
-                <li><a href="pagina1.html">pagina2</a></li>
-                <li><a href="pagina3.html">pagina3</a></li>  
-                
+                <li><a href="maquetacion.html" class="nav-link-elegante">maquetacion</a></li>
+                <li><a href="index.html" class="nav-link-elegante">index</a></li>
+                <li><a href="pagina1.html" class="nav-link-elegante">pagina1</a></li>
+                <li><a href="pagina2.html" class="nav-link-elegante">pagina2</a></li>
+                <li><a href="pagina4.html" class="nav-link-elegante">pagina4</a></li>
             </ul>
         </nav>
     </header>
-    <section id="sobremi">
-        <h2>Sobre mi</h2>
-        <p>soy Eduardo</p>
-        <p>tengo 18 años </p>
-        <p>Soy de Canete</p>
+    <section id="sobremi" class="seccion-elegante">
+        <h2 class="subtitulo-elegante">Sobre Mí</h2>
+        <div class="grid-sobremi">
+            <article class="caja-elegante">
+                <img src="imagenes/eduardo.jpg" alt="Foto Profesional" class="img-caja">
+                <h3>Perfil</h3>
+                <p>Soy Eduardo, diseñador web de 19 años con pasión por el diseño digital, enfocado en proyectos profesionales.</p>
+            </article>
+            <article class="caja-elegante">
+                <img src="imagenes/htmlcss.jpg" alt="Skills Icon" class="img-caja">
+                <h3>Habilidades</h3>
+                <p>Experto en HTML/CSS/JS, Figma y Java. Enfoque en diseños limpios y escalables para mis clientes.</p>
+            </article>
+            <article class="caja-elegante">
+                <img src="imagenes/vision.jpg" alt="Bio Visual" class="img-caja">
+                <h3>Visión</h3>
+                <p>Disponible para colaboraciones selectas.</p>
+            </article>
+        </div>
     </section>
-    <section>
-        <h2>Proyecto</h2>
-        <article>
-            <p>Jugar brainrots.</p>
-            <p>Soy muy pro</p>
-        </article>
-        <article>
-            <p>Le se al free fire</p>
-            <p>Soy heroico insano</p>
-        </article>
-        <article>
-            <p>Lorem, ipsum.</p>
-            <p>Ratione, esse!</p>
-        </article>
+    <section class="proyectos-elegante seccion-elegante">
+        <h2 class="subtitulo-elegante">Proyectos Destacados</h2>
+        <div class="grid-proyectos">
+            <article class="caja-elegante">
+                <img src="imagenes/glitchy.png" alt="Proyecto 1" class="img-caja">
+                <h3>Página Glitchy Neón</h3>
+                <p>Diseño innovador con efectos dinámicos</a>.</p>
+            </article>
+            <article class="caja-elegante">
+                <img src="imagenes/figma.png" alt="Proyecto 2" class="img-caja">
+                <h3>Prototipo en Figma</h3>
+                <p>Prototipo elegante en Figma </p>
+            </article>
+            <article class="caja-elegante">
+                <img src="imagenes/portafolio.jpg" alt="Proyecto 3" class="img-caja">
+                <h3>Portfolio digital</h3>
+                <p>Diseñé un espacio online para mostrar mis trabajos.</p>
+            </article>
+        </div>
     </section>
-    <section>
-        <article>
-            <p>Lorem, ipsum.</p>
-            <p>Officia, molestiae!</p>
-        </article>
-        <article>
-            <p>Lorem, ipsum.</p>
-            <p>Dignissimos, soluta?</p>
-        </article>
-        <article>
-            <p>Lorem, ipsum.</p>
-            <p>Ab, quidem!</p>
-        </article>
+
+    <section class="hobbies-elegante seccion-elegante">
+        <h2 class="subtitulo-elegante">Hobbies</h2>
+        <div class="grid-hobbies">
+            <article class="caja-elegante">
+                <img src="imagenes/dibujo.jpg" alt="Hobby 1" class="img-caja">
+                <h3>Diseño Gráfico</h3>
+                <p>Explorando arte minimalista en tiempo libre.</p>
+            </article>
+            <article class="caja-elegante">
+                <img src="imagenes/libros.jpg" alt="Hobby 2" class="img-caja">
+                <h3>Lectura Estratégica</h3>
+                <p>Libros sobre diseño y negocio para inspiración profesional.</p>
+            </article>
+            <article class="caja-elegante">
+                <img src="imagenes/creatividad.jpg" alt="Hobby 3" class="img-caja">
+                <h3>Impulsar mi creatividad</h3>
+                <p>Me dedico tiempo a imaginar más halla de lo habitual</p>
+            </article>
+        </div>
     </section>
-    <footer>
-        <h1>Contactos</h1>
+
+    <section id="contacto" class="seccion-elegante">
+        <h2 class="subtitulo-elegante">Contacto</h2>
+        <div class="grid-contacto">
+            <div class="sub-grid-contacto-izq">
+                <form class="form-elegante">
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Mensaje" rows="4" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            <div class="sub-grid-contacto-der">
+                <p class="info-contacto">Para colaboraciones exclusivas, contáctame. Selecciono proyectos con visión alineada.</p>
+                <p>Email: 2411110108@undc.edu.pe | Teléfono: +51 993252311</p>
+                <a href="https://www.linkedin.com/feed/"><span class="social-icon">💼</span> LinkedIn</a> | <a href="https://github.com/LazaroEDUwU"><span class="social-icon">🐙</span> GitHub</a></p>
+            </div>
+        </div>
+    </section>
+    <section class="blog-elegante seccion-elegante">
+        <h2 class="subtitulo-elegante">Blog</h2>
+        <div class="grid-blog">
+            <article class="caja-elegante">
+                <img src="imagenes/tendencias.jpg" alt="Post 1" class="img-caja">
+                <h3>Tendencias Tecnológicas 2025</h3>
+                <p>DInteligencia Artificial, cloud computing y ciberseguridad: las tecnologías que marcarán la próxima generación de profesionales.</p>
+            </article>
+            <article class="caja-elegante">
+                <img src="imagenes/buenas.jpg" alt="Post 2" class="img-caja">
+                <h3>Buenas Prácticas en Programación</h3>
+                <p>Cómo aplicar principios de clean code y control de versiones para proyectos más sólidos y fáciles de mantener.</p>
+            </article>
+            <article class="caja-elegante">
+                <img src="imagenes/ciber.jpg" alt="Post 3" class="img-caja">
+                <h3>Ciberseguridad en la Era Digital</h3>
+                <p>Los ingenieros en sistemas deben conocer las principales amenazas digitales y las estrategias clave para prevenir ataques.</p>
+            </article>
+        </div>
+    </section>
+
+    <footer class="footer-elegante">
+        <img src="imagenes/objetivo.jpg" alt="Icono Elegante" class="img-footer">
+        <p> 2025 Eduardo</p>
     </footer>
 </body>
 </html>
