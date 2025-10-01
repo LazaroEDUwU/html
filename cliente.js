@@ -8,6 +8,9 @@ function enviarCorreo(e) {
 
   emailjs.send("service_wbk635y", "template_kit18bl", {
     from_name: document.getElementById("nombre").value,
+    from_lastname: document.getElementById("apellido").value,
+    from_compañia: document.getElementById("compañia").value,
+    from_telefono: document.getElementById("telefono").value,
     from_email: document.getElementById("email").value,
     message: document.getElementById("mensaje").value
   })
